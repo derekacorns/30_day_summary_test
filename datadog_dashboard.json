@@ -1,0 +1,689 @@
+//{PLACEHOLDER}
+//{
+//   "layout_type" : "ordered",
+//   "widgets" : [
+//      {
+//         "id" : 776293279037230,
+//         "definition" : {
+//            "layout_type" : "ordered",
+//            "widgets" : [
+//               {
+//                  "id" : 7112685000920966,
+//                  "definition" : {
+//                     "yaxis" : {
+//                        "min" : "auto",
+//                        "max" : "auto",
+//                        "scale" : "linear",
+//                        "label" : "",
+//                        "include_zero" : true
+//                     },
+//                     "legend_size" : "0",
+//                     "requests" : [
+//                        {
+//                           "metadata" : [
+//                              {
+//                                 "expression" : "avg:offer_delivery_service.graphql.activeFoundMoneyOffers.respond.count{*}.as_count()",
+//                                 "alias_name" : "activeFMO"
+//                              }
+//                           ],
+//                           "display_type" : "bars",
+//                           "style" : {
+//                              "palette" : "orange",
+//                              "line_width" : "normal",
+//                              "line_type" : "solid"
+//                           },
+//                           "q" : "avg:offer_delivery_service.graphql.activeFoundMoneyOffers.respond.count{*}.as_count()"
+//                        }
+//                     ],
+//                     "type" : "timeseries",a
+//                     "show_legend" : false,
+//                     "title" : "Total Requests for activeFoundMoneyOffers"
+//                  }
+//               },
+//               {
+//                  "definition" : {
+//                     "title" : "Latency for activeFoundMoneyOffers",
+//                     "show_legend" : false,
+//                     "type" : "timeseries",
+//                     "requests" : [
+//                        {
+//                           "style" : {
+//                              "line_width" : "normal",
+//                              "palette" : "orange",
+//                              "line_type" : "solid"
+//                           },
+//                           "display_type" : "line",
+//                           "metadata" : [
+//                              {
+//                                 "expression" : "avg:offer_delivery_service.graphql.activeFoundMoneyOffers.respond.avg{*}",
+//                                 "alias_name" : "avg"
+//                              }
+//                           ],
+//                           "q" : "avg:offer_delivery_service.graphql.activeFoundMoneyOffers.respond.avg{*}"
+//                        },
+//                        {
+//                           "display_type" : "line",
+//                           "style" : {
+//                              "line_type" : "solid",
+//                              "line_width" : "normal",
+//                              "palette" : "orange"
+//                           },
+//                           "metadata" : [
+//                              {
+//                                 "expression" : "avg:offer_delivery_service.graphql.activeFoundMoneyOffers.respond.95percentile{*}",
+//                                 "alias_name" : "95%"
+//                              }
+//                           ],
+//                           "q" : "avg:offer_delivery_service.graphql.activeFoundMoneyOffers.respond.95percentile{*}"
+//                        },
+//                        {
+//                           "display_type" : "line",
+//                           "style" : {
+//                              "line_type" : "dotted",
+//                              "palette" : "grey",
+//                              "line_width" : "normal"
+//                           },
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "cohorts avg",
+//                                 "expression" : "avg:offer_delivery_service.cohort_service.cohort_for_user.get.avg{*}"
+//                              }
+//                           ],
+//                           "q" : "avg:offer_delivery_service.cohort_service.cohort_for_user.get.avg{*}"
+//                        }
+//                     ],
+//                     "legend_size" : "0",
+//                     "yaxis" : {
+//                        "max" : "auto",
+//                        "scale" : "linear",
+//                        "label" : "",
+//                        "min" : "auto",
+//                        "include_zero" : true
+//                     }
+//                  },
+//                  "id" : 624501271638132
+//               },
+//               {
+//                  "definition" : {
+//                     "legend_size" : "0",
+//                     "requests" : [
+//                        {
+//                           "display_type" : "bars",
+//                           "style" : {
+//                              "line_type" : "solid",
+//                              "palette" : "purple",
+//                              "line_width" : "normal"
+//                           },
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "searchActiveFMO",
+//                                 "expression" : "avg:offer_delivery_service.graphql.searchActiveFoundMoneyOffers.respond.count{*}.as_count()"
+//                              }
+//                           ],
+//                           "q" : "avg:offer_delivery_service.graphql.searchActiveFoundMoneyOffers.respond.count{*}.as_count()"
+//                        }
+//                     ],
+//                     "yaxis" : {
+//                        "include_zero" : true,
+//                        "max" : "auto",
+//                        "label" : "",
+//                        "scale" : "linear",
+//                        "min" : "auto"
+//                     },
+//                     "title" : "Total Requests for searchFoundMoneyOffers",
+//                     "type" : "timeseries",
+//                     "show_legend" : false
+//                  },
+//                  "id" : 6657549184031388
+//               },
+//               {
+//                  "definition" : {
+//                     "requests" : [
+//                        {
+//                           "q" : "avg:offer_delivery_service.graphql.searchActiveFoundMoneyOffers.respond.avg{*}",
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "avg",
+//                                 "expression" : "avg:offer_delivery_service.graphql.searchActiveFoundMoneyOffers.respond.avg{*}"
+//                              }
+//                           ],
+//                           "display_type" : "line",
+//                           "style" : {
+//                              "line_width" : "normal",
+//                              "palette" : "purple",
+//                              "line_type" : "solid"
+//                           }
+//                        },
+//                        {
+//                           "q" : "avg:offer_delivery_service.graphql.searchActiveFoundMoneyOffers.respond.95percentile{*}",
+//                           "display_type" : "line",
+//                           "style" : {
+//                              "palette" : "purple",
+//                              "line_width" : "normal",
+//                              "line_type" : "solid"
+//                           },
+//                           "metadata" : [
+//                              {
+//                                 "expression" : "avg:offer_delivery_service.graphql.searchActiveFoundMoneyOffers.respond.95percentile{*}",
+//                                 "alias_name" : "95%"
+//                              }
+//                           ]
+//                        },
+//                        {
+//                           "q" : "avg:offer_delivery_service.cohort_service.cohort_for_user.get.avg{*}",
+//                           "display_type" : "line",
+//                           "style" : {
+//                              "line_type" : "dotted",
+//                              "line_width" : "normal",
+//                              "palette" : "grey"
+//                           },
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "cohorts avg",
+//                                 "expression" : "avg:offer_delivery_service.cohort_service.cohort_for_user.get.avg{*}"
+//                              }
+//                           ]
+//                        }
+//                     ],
+//                     "legend_size" : "0",
+//                     "yaxis" : {
+//                        "max" : "auto",
+//                        "scale" : "linear",
+//                        "label" : "",
+//                        "min" : "auto",
+//                        "include_zero" : true
+//                     },
+//                     "title" : "Latency for searchActiveFoundMoneyOffers",
+//                     "show_legend" : false,
+//                     "type" : "timeseries"
+//                  },
+//                  "id" : 5863517362634074
+//               },
+//               {
+//                  "id" : 8489824549012864,
+//                  "definition" : {
+//                     "title" : "Cohort for user latency",
+//                     "type" : "timeseries",
+//                     "show_legend" : false,
+//                     "requests" : [
+//                        {
+//                           "q" : "avg:offer_delivery_service.cohort_service.cohort_for_user.get.95percentile{*}",
+//                           "metadata" : [
+//                              {
+//                                 "expression" : "avg:offer_delivery_service.cohort_service.cohort_for_user.get.95percentile{*}",
+//                                 "alias_name" : "95%"
+//                              }
+//                           ],
+//                           "style" : {
+//                              "line_width" : "normal",
+//                              "palette" : "grey",
+//                              "line_type" : "solid"
+//                           },
+//                           "display_type" : "line"
+//                        },
+//                        {
+//                           "q" : "avg:offer_delivery_service.cohort_service.cohort_for_user.get.avg{*}",
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "Avg",
+//                                 "expression" : "avg:offer_delivery_service.cohort_service.cohort_for_user.get.avg{*}"
+//                              }
+//                           ],
+//                           "style" : {
+//                              "line_type" : "solid",
+//                              "palette" : "grey",
+//                              "line_width" : "normal"
+//                           },
+//                           "display_type" : "line"
+//                        }
+//                     ],
+//                     "legend_size" : "0",
+//                     "yaxis" : {
+//                        "include_zero" : true,
+//                        "min" : "auto",
+//                        "max" : "auto",
+//                        "label" : "",
+//                        "scale" : "linear"
+//                     }
+//                  }
+//               }
+//            ],
+//            "title" : "Query Traffic and Latencies",
+//            "type" : "group"
+//         }
+//      },
+//      {
+//         "definition" : {
+//            "layout_type" : "ordered",
+//            "widgets" : [
+//               {
+//                  "definition" : {
+//                     "title" : "Get Offer System Endpoint Success/Failure",
+//                     "show_legend" : false,
+//                     "type" : "timeseries",
+//                     "legend_size" : "10",
+//                     "requests" : [
+//                        {
+//                           "metadata" : [
+//                              {
+//                                 "expression" : "sum:offer_delivery_service.fetch_campaign_offer.get_data.success{*}.as_count().rollup(avg, 600)",
+//                                 "alias_name" : "Success"
+//                              }
+//                           ],
+//                           "style" : {
+//                              "palette" : "cool",
+//                              "line_width" : "normal",
+//                              "line_type" : "solid"
+//                           },
+//                           "display_type" : "line",
+//                           "q" : "sum:offer_delivery_service.fetch_campaign_offer.get_data.success{*}.as_count().rollup(avg, 600)"
+//                        },
+//                        {
+//                           "q" : "sum:offer_delivery_service.fetch_campaign_offer.get_data.failure{*}.as_count().rollup(avg, 600)",
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "Failure",
+//                                 "expression" : "sum:offer_delivery_service.fetch_campaign_offer.get_data.failure{*}.as_count().rollup(avg, 600)"
+//                              }
+//                           ],
+//                           "display_type" : "line",
+//                           "style" : {
+//                              "palette" : "warm",
+//                              "line_width" : "normal",
+//                              "line_type" : "solid"
+//                           }
+//                        }
+//                     ],
+//                     "yaxis" : {
+//                        "min" : "auto",
+//                        "scale" : "linear",
+//                        "max" : "auto",
+//                        "label" : "",
+//                        "include_zero" : true
+//                     }
+//                  },
+//                  "id" : 2128027034029830
+//               },
+//               {
+//                  "id" : 2128027034029831,
+//                  "definition" : {
+//                     "show_legend" : false,
+//                     "type" : "timeseries",
+//                     "title" : "Initialize/Update Failure",
+//                     "yaxis" : {
+//                        "include_zero" : true,
+//                        "min" : "auto",
+//                        "max" : "auto",
+//                        "scale" : "linear",
+//                        "label" : ""
+//                     },
+//                     "requests" : [
+//                        {
+//                           "q" : "sum:offer_delivery_service.fetch_campaign_offer.initialize_data.failure{*}.as_count().rollup(max, 600)",
+//                           "style" : {
+//                              "palette" : "warm",
+//                              "line_width" : "normal",
+//                              "line_type" : "solid"
+//                           },
+//                           "display_type" : "line",
+//                           "metadata" : [
+//                              {
+//                                 "expression" : "sum:offer_delivery_service.fetch_campaign_offer.initialize_data.failure{*}.as_count().rollup(max, 600)",
+//                                 "alias_name" : "Initialize Failure"
+//                              }
+//                           ]
+//                        },
+//                        {
+//                           "display_type" : "line",
+//                           "style" : {
+//                              "palette" : "warm",
+//                              "line_width" : "normal",
+//                              "line_type" : "solid"
+//                           },
+//                           "metadata" : [
+//                              {
+//                                 "expression" : "sum:offer_delivery_service.fetch_campaign_offer.update_data.failure{*}.as_count().rollup(max, 600)",
+//                                 "alias_name" : "Update Failure"
+//                              }
+//                           ],
+//                           "q" : "sum:offer_delivery_service.fetch_campaign_offer.update_data.failure{*}.as_count().rollup(max, 600)"
+//                        }
+//                     ],
+//                     "legend_size" : "0"
+//                  }
+//               },
+//               {
+//                  "definition" : {
+//                     "type" : "timeseries",
+//                     "show_legend" : false,
+//                     "title" : "Parse Campaign Success/Failure",
+//                     "yaxis" : {
+//                        "scale" : "linear",
+//                        "max" : "auto",
+//                        "label" : "",
+//                        "min" : "auto",
+//                        "include_zero" : true
+//                     },
+//                     "legend_size" : "0",
+//                     "requests" : [
+//                        {
+//                           "q" : "sum:offer_delivery_service.fetch_campaign_offer.campaign.parse_data.failure{*}.as_count().rollup(avg, 600)",
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "Failure",
+//                                 "expression" : "sum:offer_delivery_service.fetch_campaign_offer.campaign.parse_data.failure{*}.as_count().rollup(avg, 600)"
+//                              }
+//                           ],
+//                           "style" : {
+//                              "palette" : "warm",
+//                              "line_width" : "normal",
+//                              "line_type" : "solid"
+//                           },
+//                           "display_type" : "line"
+//                        },
+//                        {
+//                           "q" : "sum:offer_delivery_service.fetch_campaign_offer.campaign.parse_data.success{*}.as_count().rollup(avg, 600)",
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "Success",
+//                                 "expression" : "sum:offer_delivery_service.fetch_campaign_offer.campaign.parse_data.success{*}.as_count().rollup(avg, 600)"
+//                              }
+//                           ],
+//                           "style" : {
+//                              "line_type" : "solid",
+//                              "line_width" : "normal",
+//                              "palette" : "cool"
+//                           },
+//                           "display_type" : "line"
+//                        }
+//                     ]
+//                  },
+//                  "id" : 6543400713527600
+//               },
+//               {
+//                  "id" : 1389636183971858,
+//                  "definition" : {
+//                     "title" : "Parse CampaignOffer Success/Failure",
+//                     "type" : "timeseries",
+//                     "show_legend" : false,
+//                     "requests" : [
+//                        {
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "Failure",
+//                                 "expression" : "avg:offer_delivery_service.fetch_campaign_offer.campaign_offer.parse_data.failure{*}.as_count().rollup(avg, 600)"
+//                              }
+//                           ],
+//                           "style" : {
+//                              "line_width" : "normal",
+//                              "palette" : "warm",
+//                              "line_type" : "solid"
+//                           },
+//                           "display_type" : "line",
+//                           "q" : "avg:offer_delivery_service.fetch_campaign_offer.campaign_offer.parse_data.failure{*}.as_count().rollup(avg, 600)"
+//                        },
+//                        {
+//                           "style" : {
+//                              "line_width" : "normal",
+//                              "palette" : "cool",
+//                              "line_type" : "solid"
+//                           },
+//                           "display_type" : "line",
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "Success",
+//                                 "expression" : "avg:offer_delivery_service.fetch_campaign_offer.campaign_offer.parse_data.success{*}.as_count().rollup(avg, 600)"
+//                              }
+//                           ],
+//                           "q" : "avg:offer_delivery_service.fetch_campaign_offer.campaign_offer.parse_data.success{*}.as_count().rollup(avg, 600)"
+//                        }
+//                     ],
+//                     "legend_size" : "0",
+//                     "yaxis" : {
+//                        "max" : "auto",
+//                        "scale" : "linear",
+//                        "label" : "",
+//                        "min" : "auto",
+//                        "include_zero" : true
+//                     }
+//                  }
+//               },
+//               {
+//                  "id" : 5849088089758080,
+//                  "definition" : {
+//                     "show_legend" : false,
+//                     "type" : "timeseries",
+//                     "title" : "Keyphrase Category Success/Failure",
+//                     "yaxis" : {
+//                        "max" : "auto",
+//                        "label" : "",
+//                        "scale" : "linear",
+//                        "min" : "auto",
+//                        "include_zero" : true
+//                     },
+//                     "requests" : [
+//                        {
+//                           "style" : {
+//                              "line_type" : "solid",
+//                              "line_width" : "normal",
+//                              "palette" : "warm"
+//                           },
+//                           "display_type" : "line",
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "Failure",
+//                                 "expression" : "avg:offer_delivery_service.fetch_campaign_offer.category.parse_data.failure{*}.as_count().rollup(avg, 600)"
+//                              }
+//                           ],
+//                           "q" : "avg:offer_delivery_service.fetch_campaign_offer.category.parse_data.failure{*}.as_count().rollup(avg, 600)"
+//                        },
+//                        {
+//                           "q" : "avg:offer_delivery_service.fetch_campaign_offer.category.parse_data.success{*}.as_count().rollup(avg, 600)",
+//                           "style" : {
+//                              "line_width" : "normal",
+//                              "palette" : "cool",
+//                              "line_type" : "solid"
+//                           },
+//                           "display_type" : "line",
+//                           "metadata" : [
+//                              {
+//                                 "expression" : "avg:offer_delivery_service.fetch_campaign_offer.category.parse_data.success{*}.as_count().rollup(avg, 600)",
+//                                 "alias_name" : "Success"
+//                              }
+//                           ]
+//                        }
+//                     ],
+//                     "legend_size" : "0"
+//                  }
+//               }
+//            ],
+//            "title" : "Cache Update Metrics",
+//            "type" : "group"
+//         },
+//         "id" : 7661964789912622
+//      },
+//      {
+//         "id" : 2932823674282726,
+//         "definition" : {
+//            "title" : "Cache Update Latencies of external services",
+//            "type" : "group",
+//            "layout_type" : "ordered",
+//            "widgets" : [
+//               {
+//                  "definition" : {
+//                     "show_legend" : false,
+//                     "type" : "timeseries",
+//                     "title" : "Campaign get latency",
+//                     "yaxis" : {
+//                        "include_zero" : true,
+//                        "min" : "auto",
+//                        "max" : "auto",
+//                        "scale" : "linear",
+//                        "label" : ""
+//                     },
+//                     "requests" : [
+//                        {
+//                           "q" : "max:offer_delivery_service.fetch_campaign_offer.campaign.get.95percentile{*}",
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "95%",
+//                                 "expression" : "max:offer_delivery_service.fetch_campaign_offer.campaign.get.95percentile{*}"
+//                              }
+//                           ],
+//                           "display_type" : "line",
+//                           "style" : {
+//                              "line_width" : "normal",
+//                              "palette" : "warm",
+//                              "line_type" : "solid"
+//                           }
+//                        },
+//                        {
+//                           "q" : "max:offer_delivery_service.fetch_campaign_offer.campaign.get.avg{*}",
+//                           "display_type" : "line",
+//                           "style" : {
+//                              "line_type" : "solid",
+//                              "line_width" : "normal",
+//                              "palette" : "purple"
+//                           },
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "Avg",
+//                                 "expression" : "max:offer_delivery_service.fetch_campaign_offer.campaign.get.avg{*}"
+//                              }
+//                           ]
+//                        }
+//                     ],
+//                     "legend_size" : "0"
+//                  },
+//                  "id" : 191351559811494
+//               },
+//               {
+//                  "id" : 7193060635720476,
+//                  "definition" : {
+//                     "show_legend" : false,
+//                     "type" : "timeseries",
+//                     "title" : "Campaign Offer Get Latency",
+//                     "yaxis" : {
+//                        "include_zero" : true,
+//                        "max" : "auto",
+//                        "scale" : "linear",
+//                        "label" : "",
+//                        "min" : "auto"
+//                     },
+//                     "legend_size" : "0",
+//                     "requests" : [
+//                        {
+//                           "q" : "max:offer_delivery_service.fetch_campaign_offer.campaign_offer.get.95percentile{*}",
+//                           "style" : {
+//                              "palette" : "warm",
+//                              "line_width" : "normal",
+//                              "line_type" : "solid"
+//                           },
+//                           "display_type" : "line",
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "95%",
+//                                 "expression" : "max:offer_delivery_service.fetch_campaign_offer.campaign_offer.get.95percentile{*}"
+//                              }
+//                           ]
+//                        },
+//                        {
+//                           "q" : "max:offer_delivery_service.fetch_campaign_offer.campaign_offer.get.avg{*}",
+//                           "metadata" : [
+//                              {
+//                                 "expression" : "max:offer_delivery_service.fetch_campaign_offer.campaign_offer.get.avg{*}",
+//                                 "alias_name" : "Avg"
+//                              }
+//                           ],
+//                           "style" : {
+//                              "line_width" : "normal",
+//                              "palette" : "purple",
+//                              "line_type" : "solid"
+//                           },
+//                           "display_type" : "line"
+//                        }
+//                     ]
+//                  }
+//               },
+//               {
+//                  "id" : 8707857942427702,
+//                  "definition" : {
+//                     "show_legend" : false,
+//                     "type" : "timeseries",
+//                     "title" : "offer_delivery_service.fetch_campaign_offer.category.get.95percentile, offer_d...",
+//                     "yaxis" : {
+//                        "max" : "auto",
+//                        "scale" : "linear",
+//                        "label" : "",
+//                        "min" : "auto",
+//                        "include_zero" : true
+//                     },
+//                     "legend_size" : "0",
+//                     "requests" : [
+//                        {
+//                           "q" : "max:offer_delivery_service.fetch_campaign_offer.category.get.95percentile{*}",
+//                           "metadata" : [
+//                              {
+//                                 "alias_name" : "95%",
+//                                 "expression" : "max:offer_delivery_service.fetch_campaign_offer.category.get.95percentile{*}"
+//                              }
+//                           ],
+//                           "display_type" : "line",
+//                           "style" : {
+//                              "line_width" : "normal",
+//                              "palette" : "warm",
+//                              "line_type" : "solid"
+//                           }
+//                        },
+//                        {
+//                           "metadata" : [
+//                              {
+//                                 "expression" : "max:offer_delivery_service.fetch_campaign_offer.category.get.avg{*}",
+//                                 "alias_name" : "Avg"
+//                              }
+//                           ],
+//                           "style" : {
+//                              "palette" : "purple",
+//                              "line_width" : "normal",
+//                              "line_type" : "solid"
+//                           },
+//                           "display_type" : "line",
+//                           "q" : "max:offer_delivery_service.fetch_campaign_offer.category.get.avg{*}"
+//                        }
+//                     ]
+//                  }
+//               }
+//            ]
+//         }
+//      },
+//      {
+//         "id" : 4112113491293316,
+//         "definition" : {
+//            "title" : "Notes",
+//            "type" : "group",
+//            "layout_type" : "ordered",
+//            "widgets" : [
+//               {
+//                  "definition" : {
+//                     "tick_pos" : "50%",
+//                     "content" : "This dashboard is maintained in [offer-delivery-service](https://github.com/Acornsgrow/offer-delivery-service/blob/develop/datadog_dashboard.json), please make updates there and import OR export your changes, pretty-format, and commit to the repo.",
+//                     "type" : "note",
+//                     "show_tick" : false,
+//                     "tick_edge" : "left",
+//                     "text_align" : "left",
+//                     "background_color" : "white",
+//                     "font_size" : "14"
+//                  },
+//                  "id" : 5521456552705684
+//               }
+//            ]
+//         }
+//      }
+//   ],
+//   "notify_list" : [],
+//   "title" : "[EARN] Offer Delivery Service",
+//   "is_read_only" : false,
+//   "description" : "",
+//   "template_variables" : [],
+//   "id" : "9f4-4ry-am7"
+//}

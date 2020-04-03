@@ -1,0 +1,54 @@
+schema {
+    query: ActivitySummary
+}
+
+type ActivitySummary {
+    basicSummary(accountSummaryInput: ID!): [BasicSummary]
+    laterSummary(accountSummaryInput: ID!): [LaterSummary]
+    earlySummary(accountSummaryInput: ID!): [EarlySummary]
+}
+
+input accountSummaryInput {
+    accountId: ID!
+    userID: ID!
+    summaryPeriod: Int!
+}
+
+interface accountSummary {
+    total_invested: Float!
+    total_credits: Float!
+    total_recurring: Float!
+    total_one_time: Float!
+    total_dividends: Float!
+}
+
+type BasicSummary implements accountSummary{
+    total_invested: Float!
+    total_credits: Float!
+    total_recurring: Float!
+    total_one_time: Float!
+    total_dividends: Float!
+
+    total_round_ups: Float!
+    total_found_money_rewards: Float!
+    total_referral_rewards: Float!
+    total_rtru: Float
+}
+
+type LaterSummary implements accountSummary{
+    total_invested: Float!
+    total_credits: Float!
+    total_recurring: Float!
+    total_one_time: Float!
+    total_dividends: Float!
+}
+
+type EarlySummary implements accountSummary{
+    total_invested: Float!
+    total_credits: Float!
+    total_recurring: Float!
+    total_one_time: Float!
+    total_dividends: Float!
+
+#    child_data_TBD: Float!
+}
