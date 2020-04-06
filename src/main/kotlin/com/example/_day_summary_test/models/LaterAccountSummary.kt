@@ -4,33 +4,33 @@ import com.expedia.graphql.annotations.GraphQLDescription
 
 data class LaterAccountSummary(
         @GraphQLDescription("Placeholder")
-        val summaryPeriod: Integer,
+        val summaryPeriod: Int,
 
         @GraphQLDescription("Placeholder")
-        val total_invested: Float?,
+        val total_invested: Int,
 
         @GraphQLDescription("Placeholder")
-        val total_credits: Float?,
+        val total_credits: Int,
 
         @GraphQLDescription("Placeholder")
-        val total_recurring: Float?,
+        val total_recurring: Int,
 
         @GraphQLDescription("Placeholder")
-        val total_one_time: Float?,
+        val total_one_time: Int,
 
         @GraphQLDescription("Placeholder")
-        val total_dividends: Float?,
+        val total_dividends: Int,
 
         @GraphQLDescription("Placeholder")
-        val total_gain_loss_value: Float?,
+        val total_gain_loss_value: Int,
 
         @GraphQLDescription("Placeholder")
-        val total_gain_loss_percent: Float?,
+        val total_gain_loss_percent: Int,
 
         @GraphQLDescription("Placeholder")
-        val market_gain_loss_value: Float?,
+        val market_gain_loss_value: Int,
 
         @GraphQLDescription("Placeholder")
-        val market_gain_loss_percent: Float?
+        val market_gain_loss_percent: Int
 
 )
